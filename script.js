@@ -12,10 +12,14 @@ btn.addEventListener("click", function () {
   cognomi.push(cognome); //cognomi[array.length] = cognome
 
   cognomi.sort(); //A-Z < a-z
+  // listaCognomi.innerHTML=("siam");
+  // console.log(listaCognomi.innerHTML);
 
-  for (var i = 0; i < cognomi.lenght; i++) {
-    listaCognomi.innerHTML += "<li>" + cognomi[i] + "</li>";
+  for (var i = 0; i < cognomi.length; i++) {
+
+    listaCognomi.innerHTML += ("<li>" + cognomi[i] + "</li>");
   }
+
 
   for (var i = 0; i < cognomi.length; i++) {
     if (cognomi[i] == cognome)
